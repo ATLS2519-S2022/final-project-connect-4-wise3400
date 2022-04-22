@@ -206,7 +206,7 @@ public class AlphaBeta implements Player
           //value = min(value, alphabeta(child, depth − 1, α, β, TRUE)) 
           int child = alphabeta(1,brd,depth-1,alpha,beta, arb); //modified
           //β = min(β, value)
-          beta = brd.unmove(col, player); //modified
+          brd.unmove(col, player); //modified
         
           if(child < minChild) //check
           {
